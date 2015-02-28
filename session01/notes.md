@@ -1,5 +1,5 @@
 
-Agenda
+## Agenda
 
 10:30 - 1      Ruby tools of the trade
 2-4:30         Building a program for
@@ -122,12 +122,68 @@ Agenda
   irb(main):003:1> end
 ```
 
-----------------------
-some randome stuff
+## Declaration
 
-  puts vs print -> print doesn't use newline
-  Class vs Object --> Think it as a class is the blue print,
-  send your function to your objects, NOT object to your function
+- Global Variables
+- Class Variables
+  * At class, not instance level
+  * begin with "@@"
+- Instances Variables
+  * defined once for every instatiated class/module
+  * begins with "@"
 
+### Class Properties
 
-  D.R.Y --> Don't repeat yourself
+- Getter
+  * Used by other object to "read" a property
+
+```
+attr_reader :color
+```
+
+- Setter
+  * Used by other objects to "write" a new value to a property
+
+```
+attr_writer :color
+```
+
+- Read & Write
+  * does both what seter and getter do
+
+```
+attr_accessor :color
+```
+
+## Class
+
+## Exceptions
+
+- "begin" instead of try
+- "rescue" instaed of ctach
+- "raise" instande of throw
+
+## Enumerations
+
+- select
+- reject
+- collect (alias map)
+- detect (alias find)
+- inject
+
+## Disk & network i/o operation
+
+- file
+  * file.open
+  * file.close
+  * file.read
+- http
+  * Net::HTTP library
+  * wraps the HTML API
+  * Net::HTTPS for secure
+- ftp
+  * net::ftp module
+  * upload/download files
+  * fully wraps ftp protocol
+- scp
+  * uses Net::SSH & Net::SCP libs
