@@ -1,0 +1,23 @@
+* {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: black;
+    background: antiquewhite;
+    font-family: arial, tahoma, verdana, serif;
+    font-style: normal;
+    font-weight: normal;
+}
+
+div.main {
+    width:100%;
+    display: inline-block;
+    background: lawngreen;
+    padding: 15px 15px 15px 15px;
+    float: left
+}
+
