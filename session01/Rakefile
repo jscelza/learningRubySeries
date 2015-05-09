@@ -1,0 +1,14 @@
+require 'binman/rakefile'
+require 'md2man/rakefile'
+require 'cucumber/rake/take'
+
+task :default => ["update", "binman"]
+
+desc "Tasks to setup a new default project"
+task :setup do
+  ["bin", "etc", "lib", "log", "doc", "features/step_definitions", "feature/support"].each do |dir|
+    FileUtils.mkdir_p(dir) unless Dir.exist?(dir)
+  end
+
+
+end

@@ -187,3 +187,22 @@ attr_accessor :color
   * fully wraps ftp protocol
 - scp
   * uses Net::SSH & Net::SCP libs
+
+
+
+
+Testing our code...
+
+irb
+
+  require "json"
+  require_relative "lib/portfolio"
+  fcont = File.open("data/portfolio.json").read()
+  data = JSON.parse(fcont)
+  port = Porfolio.new(data)
+
+  -- Looking into the data
+  port.class
+  s1 = port.stocks
+  s1.class
+  ms = s1["MSFT"]
